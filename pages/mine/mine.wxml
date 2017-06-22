@@ -1,0 +1,31 @@
+<!--用户头像-->
+<view class="user_img">
+  <image src="{{userInfo.avatarUrl}}"></image>
+</view>
+<!--用户名-->
+<view class="user_name">{{userInfo.nickName}}</view>
+<view id="erwm" bindtap="er" >我的二维码</view>
+<view id=""  class="{{show?'show':'hidden'}} erwm-k" >
+<text class="back" bindtap="back"> 《 </text>
+<image class="ma" src="../imgs/code.png"></image>
+</view>
+
+<view class="dd">我的订单</view>
+<view class="shouh">
+    <view class="classname">
+        <navigator url="../order/order"><image src="../imgs/iocn_home_01.png"></image> <text>待付款</text></navigator>
+       
+    </view>
+    <view class="classname">
+        <navigator url="../order/order"><image src="../imgs/iocn_home_02.png"></image><text>待发货</text></navigator>
+        
+    </view>
+    <view class="classname">
+        <navigator url="../order/order"><image src="../imgs/iocn_home_03.png"></image><text>待收货</text></navigator>
+        
+    </view>
+    <view class="classname">
+        <navigator url="../order/order"><image src="../imgs/iocn_home_04.png"></image><text>已完成</text></navigator>
+        
+    </view>
+</view>
