@@ -1,0 +1,55 @@
+/**index.wxss**/
+/*.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}*/
+/*首页banner*/
+.body{
+  overflow: hidden;
+  width:828rpx;
+}
+.banner{
+  /*width:828rpx;*/
+  height: 400rpx;
+}
+.banner image{
+  width:100%;
+  height: 400rpx;
+}
+/*新品推荐*/
+.xinp{
+  text-align: left;
+  font-size: 16px;
+  padding:30rpx 0 0 30rpx;
+  color: #1D9557;
+  font-weight: 700;
+}
+.xinp-list{
+  width:828rpx;
+  margin-top: 30rpx;
+  
+}
+.xinp-box{
+  display: inline-block;
+  width:30%;
+  }
+.xinp-list image{
+  width:100%;
+  height: 270rpx;
+}

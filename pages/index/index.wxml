@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<!--首页banner-->
+<view class="body">
+
+  <swiper class="banner" indicator-dots="true" indicator-active-color="yellow" indicator-color="#fff" autoplay="true" circular="true">
+    <swiper-item wx:for="{{banners}}" wx:key="{{index}}">
+      <image src="{{item.pic_url}}"></image>
+    </swiper-item>
+  </swiper>
+
+  <!--新品推荐-->
+  <view class="xinp">新品推荐</view>
+  <view class="xinp-list" > 
+    <view class="xinp-box" wx:for="{{goods}}" wx:key="{{index}}">
+      <navigator url="../detail/detail?id={{item.id}}"   >
+          <image src="{{item.photo}}"></image>
+        </navigator>
+    </view>
+  </view>
+  <!--超值购买-->
+  <view class="xinp">超值购买</view>
+  <view class="xinp-list" > 
+    <view class="xinp-box" wx:for="{{goods}}" wx:key="{{index}}">
+      <navigator url="../detail/detail?id={{item.id}}"  >
+          <image src="{{item.photo}}"></image>
+        </navigator>
+    </view>
+  </view>
+</view>

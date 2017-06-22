@@ -1,0 +1,17 @@
+<!--pages/detail/detail.wxml-->
+<image class="buy_img" src="{{good[0].photo}}"></image>
+<view class="buy_box">
+  <view class="dis">商品名称：{{good[0].sname}}</view>
+  <view class="dis">商品介绍：{{good[0].dis}}</view>
+  <view class="price">单价：<text style="color:red;font-weight:600;">￥{{good[0].price}}</text></view>
+  <view class="num">
+      <text class="sl">数量：</text>
+      <text class="jian" bindtap="reduce">-</text>
+      <text class="shu">{{good[0].num}}</text>
+      <text class="jia" bindtap="add">+</text>
+  </view>
+</view>
+<view class="jiaru" bindtap="jiaru" id="{{good[0].id}}">加入购物车</view>
+<navigator class="goum" url="../buy/buy" open-type="switchTab"><view class="jisuan" bindtap="jiaru">立即购买</view></navigator>
+
+

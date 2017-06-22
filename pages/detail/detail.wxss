@@ -1,0 +1,90 @@
+/* pages/detail/detail.wxss */
+.buy_img{
+  display: block;
+  margin:30rpx auto;
+  width:480rpx;
+  height: 480rpx;
+
+}
+.buy_box{
+  /*height: 100rpx;*/
+  /*line-height: 100rpx;*/
+  width:100%;
+  margin: auto;
+  border-radius: 50rpx;
+  padding:0 30rpx;
+}
+.dis{
+  font-size: 28rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  width:100%;
+  border-bottom:1px dashed #aaa;
+}
+.price{
+  width:100%;
+  height: 70rpx;
+  line-height: 70rpx;
+  border-bottom:1px dashed #aaa;
+  text-align: left;
+  font-size: 28rpx;
+ 
+}
+.num{
+   width:100%;
+  height: 70rpx;
+  line-height: 70rpx;
+  
+}
+.sl{
+  display: inline-block;
+  width:100rpx;
+  height: 70rpx;
+  text-align: left;
+  font-size: 28rpx;
+}
+.jian{
+   display: inline-block;
+  width:50rpx;
+  height: 70rpx;
+  text-align: center;
+  font-size: 36rpx;
+}
+.shu{
+    display: inline-block;
+  width:50rpx;
+  height: 70rpx;
+  text-align: center;
+  font-size: 30rpx;
+}
+.jia{
+  display: inline-block;
+  width:50rpx;
+  height: 70rpx;
+  text-align: center;
+  font-size: 36rpx;
+}
+.jiaru{
+  position: fixed;
+  right:160rpx;
+  bottom:0;
+  width:160rpx;
+  height: 90rpx;
+  background: #1D9557;
+  font-size: 30rpx;
+  text-align:center;
+  line-height: 90rpx;
+  color: #fff;
+}
+.goum{
+  position: fixed;
+  right:0;
+  bottom:0;
+  width:160rpx;
+  height: 90rpx;
+  background: #48C23D;
+  font-size: 30rpx;
+  text-align:center;
+  line-height: 90rpx;
+  color: #fff;
+}
