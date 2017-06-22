@@ -1,0 +1,28 @@
+<!--pages/order/order.wxml-->
+<view class="top_bar">
+  <view class="{{selected?'red':'default'}}" bindtap="selected">全部订单</view>
+    <view class="{{selected1?'red':'default'}}" bindtap="selected1">待付款</view>
+    <view class="{{selected2?'red':'default'}}" bindtap="selected2">待收货</view>
+    <view class="{{selected3?'red':'default'}}" bindtap="selected3">待评价</view>
+    <view class="{{selected4?'red':'default'}}" bindtap="selected4">退货/售后</view>
+</view>
+<!--全部订单-->
+<view class="{{selected?'show':'hidden'}}">
+    <text style="font-size:28rpx;color:#48AD48;font-weight:700">1</text>
+</view>
+<!--待付款-->
+<view class="{{selected1?'show':'hidden'}}">
+    <text style="font-size:28rpx;color:#48AD48;font-weight:700">2</text>
+</view>
+<!--待收货-->
+<view class="{{selected2?'show':'hidden'}}">
+    <text style="font-size:28rpx;color:#48AD48;font-weight:700">3</text>
+</view>
+<!--待评价-->
+<view class="{{selected3?'show':'hidden'}}">
+    <text style="font-size:28rpx;color:#48AD48;font-weight:700">4</text>
+</view>
+<!--售后-->
+<view class="{{selected4?'show':'hidden'}}">
+    <text style="font-size:28rpx;color:#48AD48;font-weight:700">5</text>
+</view>
