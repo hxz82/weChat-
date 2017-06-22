@@ -1,0 +1,50 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/catalogue/catalogue",
+    "pages/mine/mine",
+    "pages/buy/buy",
+    "pages/logs/logs",
+    "pages/detail/detail",
+    "pages/order/order"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#1D9557",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#35495e",
+    "borderStyle": "white",
+    "backgroundColor": "#f9f9f9",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/imgs/sy-no.png",
+        "selectedIconPath": "pages/imgs/sy-yes.png"
+      },
+      {
+        "text": "分类",
+        "pagePath": "pages/catalogue/catalogue",
+        "iconPath": "pages/imgs/fl-no.png",
+        "selectedIconPath": "pages/imgs/fl-yes.png"
+      },
+      {
+        "text": "购物车",
+        "pagePath": "pages/buy/buy",
+        "iconPath": "pages/imgs/gwc-no.png",
+        "selectedIconPath": "pages/imgs/gwc-yes.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/mine/mine",
+        "iconPath": "pages/imgs/me-no.png",
+        "selectedIconPath": "pages/imgs/me-yes.png"
+      }
+    ]
+  }
+
+}
