@@ -1,0 +1,46 @@
+<view class="body">
+<!--左侧目录-->
+  <view class="nav bc_white">
+    <view class="{{selected?'red':'default'}}" bindtap="selected">水果</view>
+    <view class="{{selected1?'red':'default'}}" bindtap="selected1">蔬菜</view>
+    <view class="{{selected2?'red':'default'}}" bindtap="selected2">炒货</view>
+    <view class="{{selected3?'red':'default'}}" bindtap="selected3">甜点</view>
+    <view class="{{selected4?'red':'default'}}" bindtap="selected4">饮品</view>
+  </view>
+<!--右侧列表-->
+
+<!--水果-->
+  <view class="{{selected?'show':'hidden'}}">
+    <image class="title" src="../imgs/sg-t.png"></image>
+    <text style="font-size:28rpx;color:#48AD48;font-weight:700">--- 水果 ---</text>
+    <view class="shuig" >
+      <view class="shuig-box" wx:for="{{goods}}" wx:key="{{index}}">
+        <navigator url="../detail/detail?id={{item.id}}"  >
+          <image class="fl-img" src="{{item.photo}}"></image>
+        </navigator>
+        <view class="dis">{{item.sname}}</view>
+      </view>
+    </view>
+  </view>
+  <!--蔬菜-->
+  <view class="{{selected1?'show':'hidden'}}">
+    <image class="title" src="../imgs/sg-t.png"></image>
+    <text style="font-size:28rpx;color:#48AD48;font-weight:700">--- 蔬菜 ---</text>
+  </view>
+  <!--炒货-->
+  <view class="{{selected2?'show':'hidden'}}">
+     <image class="title" src="../imgs/sg-t.png"></image>
+    <text style="font-size:28rpx;color:#48AD48;font-weight:700">--- 炒货 ---</text>
+  </view>
+
+  <!--甜点-->
+  <view class="{{selected3?'show':'hidden'}}">
+     <image class="title" src="../imgs/sg-t.png"></image>
+    <text style="font-size:28rpx;color:#48AD48;font-weight:700">--- 甜点 ---</text>
+  </view>
+  <!--饮品-->
+  <view class="{{selected4?'show':'hidden'}}">
+     <image class="title" src="../imgs/sg-t.png"></image>
+    <text style="font-size:28rpx;color:#48AD48;font-weight:700">--- 饮品 ---</text>
+  </view>
+</view>

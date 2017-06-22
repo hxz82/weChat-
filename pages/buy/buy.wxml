@@ -1,0 +1,39 @@
+<!--pages/buy/buy.wxml-->
+<view class="{{show?'show':'hidden'}}" >
+  <view class="kong">购物车还是空的！</view>
+<navigator url="../catalogue/catalogue" open-type="switchTab"><view class="go">去购物</view></navigator>
+</view>
+
+<!--添加商品-->
+<view class="cart_box">
+  <view class="" wx:for="{{carts}}" wx:key="{{index}}">
+      <!-- wx:if 是否选择显示不同图标 -->
+      <icon wx:if="{{item.selected}}" type="success" color="#48C23D" data-index="{{index}}" bindtap="selectList" />
+      <icon wx:else type="circle" data-index="{{index}}" bindtap="selectList" />
+      <!--显示图片 点击图片可跳转到详情页-->
+      <navigator class="gwc_img" url="../detail/detail?id={{item.id}}">
+            <image class="cart_img" src="{{item.photo}}"></image>
+      </navigator>
+      <!--商品的描述 价钱 删除 加减按钮-->
+      <view class="rice_box">
+          <view class="dis">{{item.dis}}</view>
+          <view class="price">￥{{item.price}}</view>
+          <text class="jian" data-index="{{index}}" bindtap="minusCount">-</text>
+          <text class="num">{{item.num}}</text>
+          <text class="jia" data-index="{{index}}" bindtap="addCount">+</text>
+      </view>
+      <view class="delete" bindtap="deleteList">删除</view>
+  </view>
+</view>
+
+<!--全选状态-->
+<view id="quans" class="{{show?'hidden':'show'}}" >
+    <!-- wx:if 是否全选显示不同图标 -->
+    <icon wx:if="{{selectAllStatus}}" type="success_circle" color="#fff" bindtap="selectAll"/>
+    <icon wx:else type="circle" color="#fff" bindtap="selectAll"/>
+    <text class="xuan">全选</text>
+    <!-- 总价 -->
+    <view class="total">合计：<text>￥{{totalPrice}}</text></view>
+    <view class="fukuan" bindtap="pay">去付款</view>
+</view>
+
